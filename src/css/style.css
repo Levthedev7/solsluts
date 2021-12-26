@@ -67,3 +67,11 @@
   font-weight: 700 !important;
   width: 10rem !important;
 }
+@media (max-width:1500){
+  img{
+    max-width: 60%;
+  }
+  .min-h-screen{
+    min-height: 80vh;
+  }
+}
