@@ -292,7 +292,7 @@ const Home = (props: HomeProps) => {
               
               <ConnectButton style={{color: "#2d2d2d", backgroundColor:"white",border: "2px solid #2d2d2d", transition: "all 200ms ease-in-out",borderRadius : "30px", margin: "4rem 0 0 0",padding: "0.5rem 2rem"}}>Mint</ConnectButton>
               <h2 className="font-semibold text-md my-8">
-                  1000/1000 Left
+                {itemsAvailable-5961}/1000 Left
               </h2>
           </MintCard>
           <div className="flex relative lg:p-24 p-12 pt-4 justify-center items-center overflow-hidden">
@@ -374,7 +374,7 @@ const Home = (props: HomeProps) => {
             )}
           </MintButton>
               <h2 className="font-semibold text-md my-6">
-              {wallet && <p>10000/1000 Left</p>}
+              {wallet && <p>{itemsAvailable-5961}/1000 Left</p>}
               </h2>
               <h2 className="font-semibold text-md ">
               {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
