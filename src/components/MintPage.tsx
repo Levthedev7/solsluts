@@ -53,7 +53,8 @@ const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
 const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
 const connection = new anchor.web3.Connection(rpcHost);
 
-const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
+const start
+Seed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 
 const txTimeout = 30000; // milliseconds (confirm this works for your project)
 
@@ -106,7 +107,7 @@ const App = () => {
   
 
   const currentDate = new Date(new Date().toUTCString()).getTime();
-   const launchDate = new Date(Date.UTC(21, 11, 27, 2, 00, 0, 0));
+   const launchDate = new Date(Date.UTC(21, 11, 27, 2, 0, 0, 0));
 
   const Completionist = () => (
       <span style={{ color: "#2D2D2D", fontWeight: 700, fontSize: "1.5rem" }}>
